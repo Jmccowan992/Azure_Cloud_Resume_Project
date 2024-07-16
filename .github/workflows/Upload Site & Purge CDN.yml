@@ -21,8 +21,10 @@ jobs:
 
     - name: Azure service principal login
       uses: azure/login@v1
+      env:
+        CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS }}
       with:
-          creds: ${{ secrets.AZURE_CREDENTIALS }}
+        creds: $CREDENTIALS
       
     - name: Purge CDN endpoint
       uses: azure/CLI@v1
