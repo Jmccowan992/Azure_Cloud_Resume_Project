@@ -6,7 +6,8 @@ The Cloud Resume Challenge is a comprehensive, hands-on project designed to help
 
 ## Architecture
 
-![Architecture Diagram](https://github.com/user-attachments/assets/4b74e9a6-cfb6-4d38-882b-89e6ed4d3f66)
+![Architecture Diagram](https://github.com/user-attachments/assets/a8ceb054-2447-489b-957b-e061ca2029c3)
+
 
 **Services**:
 
