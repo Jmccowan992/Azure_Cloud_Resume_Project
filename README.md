@@ -15,7 +15,7 @@ The Cloud Resume Challenge is a comprehensive, hands-on project designed to help
 - CDN (Content Delivery Network)
 - DNS Zones
 - Function Apps
-- CosmosDB (Table for API)
+- CosmosDB (Table API)
 - GitHub Actions
 - ARM Templates
 
