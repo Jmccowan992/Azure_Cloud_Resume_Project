@@ -18,3 +18,15 @@ jobs:
       with:
         source-path: Site
         sas-url: ${{ secrets.DEPLOY_SAS_URL }}
+
+    - name: Azure service principal login
+      uses: azure/login@v1
+      with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+      
+    - name: Purge CDN endpoint
+      uses: azure/CLI@v1
+      with:
+        inlineScript: |
+           az cdn endpoint purge --content-paths  "/*" --profile-name "ResumeCDN" --name "jrmcccloud" --resource-group "Cloud-Resume-Project"
+          
